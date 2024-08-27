@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Hobby</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(17, 151, 147) 11.2%,
+          rgb(154, 214, 212) 55.4%,
+          rgb(255, 233, 171) 100.2%
+        );
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .exercise {
+        background-color: rgb(202, 243, 229);
+        text-align: center;
+        margin: 18px auto;
+        padding: 10px 70px 10px 70px;
+        max-width: 620px;
+        border-radius: 15px;
+      }
+      img {
+        width: 300px;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .theme {
+        color: rgb(183, 183, 203);
+        background-color: rgb(62, 53, 53);
+        border-radius: 10px;
+        font-size: medium;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        transition: all 180ms ease-in-out;
+      }
+      .theme:hover {
+        color: rgb(62, 53, 53);
+        background-color: rgb(183, 183, 203);
+        border: 0cap;
+        cursor: pointer;
+      }
+      .joinGym {
+        text-align: center;
+        color: rgb(238, 238, 247);
+        box-shadow: 30px;
+        border-radius: 50px;
+        border: 0cap;
+        margin: 15px;
+        padding: 17px 18px;
+        font-size: medium;
+        background-color: rgb(232, 154, 154);
+
+        transition: all 180ms ease-in-out;
+      }
+      .joinGym:hover {
+        color: black;
+        cursor: pointer;
+        background-color: rgb(45, 45, 143);
+      }
+      .readMore {
+        font-size: medium;
+        font-weight: 300;
+      }
+      .gym-picture1 {
+        transition: filter 150ms ease-in-out;
+        border-radius: 10px;
+        width: 400px;
+      }
+      .gym-picture1:hover {
+        transform: scale(1.2);
+        filter: contrast(70%);
+        border: 5px solid black;
+        border-radius: 30px;
+      }
+      .gym-picture3 {
+        width: 200px;
+        border-radius: 10px;
+        filter: blur(2px);
+      }
+      .gym-picture3:hover {
+        transform: scale(1.2);
+        filter: blur(0px);
+        border: 5px solid black;
+        border-radius: 30px;
+      }
+      .gym-picture2 {
+        width: 200px;
+        border-radius: 10px;
+        filter: blur(2px);
+      }
+      .gym-picture2:hover {
+        transform: scale(1.2);
+        filter: blur(0px);
+        border: 5px solid black;
+        border-radius: 30px;
+      }
+      .gym-picture4 {
+        width: 200px;
+        border-radius: 10px;
+        filter: blur(2px);
+      }
+      .gym-picture4:hover {
+        transform: scale(1.2);
+        filter: blur(0px);
+        border: 5px solid black;
+        border-radius: 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+      .grid img {
+        margin-top: 30px;
+        object-fit: cover;
+        aspect-ratio: 2/2;
+      }
+      .dark {
+        background: linear-gradient(
+          248.6deg,
+          rgb(254, 99, 132) 0%,
+          rgb(49, 52, 56) 99.8%
+        );
+      }
+      .dark a {
+        color: brown;
+      }
+      .dark .exercise {
+        background: linear-gradient(
+          180.2deg,
+          rgb(30, 33, 48) 6.8%,
+          rgb(74, 98, 110) 131%
+        );
+        color: azure;
+      }
+      .dark body {
+        background: linear-gradient(
+          248.6deg,
+          rgb(254, 99, 132) 0%,
+          rgb(49, 52, 56) 99.8%
+        );
+      }
+      .dark .readMore {
+        font-size: medium;
+        font-weight: 300;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme">Change Theme</button>
+    <div class="exercise">
+      <h1>Gym</h1>
+      <h2>I love going to the Gym 🏃🏻‍♀️💪</h2>
+      <a href="https://en.wikipedia.org/wiki/Gym" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/536/original/gym3.jpg?1721934104"
+          class="gym-picture1"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/537/original/gym4.jfif?1721934115"
+          class="gym-picture2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/534/original/gym1.jpg?1721934078"
+          class="gym-picture3"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/535/original/gym2.jpg?1721934091"
+          class="gym-picture4"
+        />
+      </div>
+      <p>
+        A gym is a large room, usually containing special equipment, where
+        people go to do physical exercise and get fit. The gym has exercise
+        bikes and running machines. It strengthens your cardiovascular system,
+        lowers blood pressure, improves flexibility and joint mobility, enhances
+        bone density, promotes healthy weight management and improve your mental
+        health and mood.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Gym"
+        target="_blank"
+        class="readMore"
+      >
+        <strong> Read more about benefits of the Gym</strong>
+      </a>
+      <br />
+      <br />
+      <div>
+        <button class="joinGym">Join a Gym near you</button>
+      </div>
+    </div>
+    <footer>Coded by Sheila Divhani Dzhivhuho</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let theme = document.querySelector(".theme");
+      theme.addEventListener("click", changeTheme);
+
+      function joinGym() {
+        let name = prompt("What is your name?");
+        let email = prompt("what is your e-address");
+        let location = prompt("Where do you stay?");
+
+        if ((location = ""));
+        alert(
+          "Thank you! " + name + " We have sent you list of Gyms near you."
+        );
+      }
+
+      let joinButton = document.querySelector(".joinGym");
+      joinButton.addEventListener("click", joinGym);
+    </script>
+  </body>
+</html>
