@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Chess</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 0 auto;
+        padding: 1% 5% 1% 5%;
+        max-width: fit-content;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      h1 {
+        color: rgb(176, 36, 57);
+        text-decoration: solid;
+        font-family: cursive;
+        font-size: 3em;
+        margin-top: 1px;
+        text-align: center;
+      }
+      h2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(233, 14, 32);
+        line-height: normal;
+        text-align: center;
+      }
+
+      .playButton {
+        border-radius: 30px;
+        cursor: pointer;
+        border: solid;
+        color: blue;
+        padding: 12px 6px 12px 6px;
+        width: 160px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      .playButton:hover {
+        color: rgb(28, 28, 31);
+        background-color: rgb(181, 181, 233);
+        border: 0cm;
+      }
+      .learnLink:hover {
+        color: red;
+        cursor: pointer;
+        text-decoration-color: blue;
+      }
+      .benefits {
+        color: rgb(18, 82, 56);
+        text-decoration: underline;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>I love playing chess </em>♟️</h1>
+
+    <hr />
+    <h2>What is Chess?</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/528/original/chess.jpeg?1721504299"
+      alt="Chess Board"
+      width="300px"
+    />
+    <div>
+      Chess is one of the oldest and most popular board games. It is played by
+      two opponents on a checkered board with specially designed pieces of
+      contrasting colours, commonly white and black. A game of chess ends when a
+      player puts the opposing player's king in a position that cannot avoid
+      capture (checkmate).
+      <p>
+        <span class="benefits">
+          <strong>Why is Chess important to me?</strong></span
+        >
+        <br />
+        It supports the development of higher-order thinking skills—like problem
+        solving, decision making, critical thinking, planning, and even creative
+        thinking. <br /><em>It keeps me on top of my game</em> 😃
+      </p>
+      ♟ ♞ ♝ ♚ ♛ ♜
+    </div>
+    <hr />
+    <strong>
+      You can
+      <a
+        href="https://en.wikipedia.org/wiki/Chess"
+        target="_blank"
+        class="learnLink"
+        >learn</a
+      >
+      and/or click the button below to play Chess online 👇.
+    </strong>
+    <br />
+
+    <p><button class="playButton">Play Chess online</button></p>
+
+    This page was built by Sheila Divhani Dzhivhuho
+
+    <script>
+      function registerUser() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your e-mail address?");
+        let piece = prompt("Which Chess piece is your favourite?");
+        piece = piece.toLowerCase();
+        piece = piece.trim();
+
+        if (
+          piece === "queen" ||
+          piece === "pawn" ||
+          piece === "king" ||
+          piece === "bishop" ||
+          piece === "knight" ||
+          piece === "horse" ||
+          piece === "castle"
+        ) {
+          alert(
+            "Thank you " +
+              name +
+              ". I also love the " +
+              piece +
+              " piece, a link has been sent to your email! 😃"
+          );
+        } else {
+          alert(
+            "You can learn " + name + " 😊, a link has been sent to your email!"
+          );
+        }
+      }
+
+      let playButton = document.querySelector("button");
+      playButton.addEventListener("click", registerUser);
+    </script>
+  </body>
+</html>
